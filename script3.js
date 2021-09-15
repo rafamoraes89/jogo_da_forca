@@ -1,4 +1,10 @@
+let audio1 = document.querySelector('#grito1')
+let audio2 = document.querySelector('#grito2')
+let audio3 = document.querySelector('#audio_success')
+let audio4 = document.querySelector('#audio_success_2')
+
 function apertarLetra_l() {
+  audio4.play()
   document.getElementById('l_').innerHTML = 'L'
   document.getElementById('l_').className = 'btn btn-success btn-md'
   document.getElementById('l_').value = 'L'
@@ -8,6 +14,7 @@ function apertarLetra_l() {
 }
 
 function apertarLetra_a() {
+  audio4.play()
   document.getElementById('a_').innerHTML = 'A'
   document.getElementById('a_').className = 'btn btn-success btn-md'
 
@@ -18,6 +25,7 @@ function apertarLetra_a() {
 }
 
 function apertarLetra_v() {
+  audio4.play()
   document.getElementById('v_').innerHTML = 'V'
   document.getElementById('v_').className = 'btn btn-success btn-md'
   document.getElementById('v_').value = 'V'
@@ -26,6 +34,7 @@ function apertarLetra_v() {
 }
 
 function apertarLetra_i() {
+  audio4.play()
   document.getElementById('i_').innerHTML = 'I'
   document.getElementById('i_').className = 'btn btn-success btn-md'
   document.getElementById('i_').value = 'I'
@@ -34,6 +43,7 @@ function apertarLetra_i() {
 }
 
 function apertarLetra_o() {
+  audio4.play()
   document.getElementById('o_').innerHTML = 'O'
   document.getElementById('o_').className = 'btn btn-success btn-md'
   document.getElementById('o_').value = 'O'
@@ -42,6 +52,7 @@ function apertarLetra_o() {
 }
 
 function apertarLetra_e() {
+  audio4.play()
   document.getElementById('e_').innerHTML = 'E'
   document.getElementById('e_').className = 'btn btn-success btn-md'
   document.getElementById('e_').value = 'E'
@@ -50,6 +61,7 @@ function apertarLetra_e() {
 }
 
 function apertarLetra_t() {
+  audio4.play()
   document.getElementById('t_').innerHTML = 'T'
   document.getElementById('t_').className = 'btn btn-success btn-md'
   document.getElementById('t_').value = 'T'
@@ -79,6 +91,7 @@ function youWin() {
     t == 'T' &&
     a == 'A'
   ) {
+    audio3.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col3g'
     document.getElementById('avancar').onclick = function () {
@@ -334,6 +347,7 @@ function youLose() {
   console.log(go)
 
   if (go >= 6) {
+    audio2.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1f'
     document.getElementById('v').onclick = function () {
@@ -358,22 +372,24 @@ function youLose() {
       return false
     }
   } else if (go == 1) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1a'
   } else if (go == 2) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1b'
   } else if (go == 3) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1c'
   } else if (go == 4) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1d'
   } else if (go == 5) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1e'
-  } else if (go == 6) {
-    document.getElementById('parabens').className = ''
-    document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1f'
   }
 }

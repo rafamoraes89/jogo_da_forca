@@ -1,4 +1,10 @@
+let audio1 = document.querySelector('#grito1')
+let audio2 = document.querySelector('#grito2')
+let audio3 = document.querySelector('#audio_success')
+let audio4 = document.querySelector('#audio_success_2')
+
 function apertarLetra_a() {
+  audio4.play()
   document.getElementById('a_').innerHTML = 'A'
   document.getElementById('a_').className = 'btn btn-success btn-md'
   document.getElementById('a_').value = 'A'
@@ -8,6 +14,7 @@ function apertarLetra_a() {
 }
 
 function apertarLetra_g() {
+  audio4.play()
   document.getElementById('g_').innerHTML = 'G'
   document.getElementById('g_').className = 'btn btn-success btn-md'
   document.getElementById('g_').value = 'G'
@@ -16,6 +23,7 @@ function apertarLetra_g() {
 }
 
 function apertarLetra_t() {
+  audio4.play()
   document.getElementById('t_').innerHTML = 'T'
   document.getElementById('t_').className = 'btn btn-success btn-md'
   document.getElementById('t_').value = 'T'
@@ -24,6 +32,7 @@ function apertarLetra_t() {
 }
 
 function apertarLetra_o() {
+  audio4.play()
   document.getElementById('o_').innerHTML = 'O'
   document.getElementById('o_').className = 'btn btn-success btn-md'
   document.getElementById('o_').value = 'O'
@@ -42,6 +51,7 @@ function youWin() {
   let t = document.getElementById('t_').value
   let o = document.getElementById('o_').value
   if (a == 'A' && g == 'G' && t == 'T' && o == 'O') {
+    audio3.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1g'
     document.getElementById('avancar').onclick = function () {
@@ -319,6 +329,7 @@ function youLose() {
     z
 
   if (go >= 6) {
+    audio2.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1f'
     document.getElementById('a').onclick = function () {
@@ -334,22 +345,25 @@ function youLose() {
       return false
     }
   } else if (go == 1) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1a'
   } else if (go == 2) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1b'
   } else if (go == 3) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1c'
   } else if (go == 4) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1d'
   } else if (go == 5) {
+    audio1.play()
     document.getElementById('parabens').className = ''
     document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1e'
-  } else if (go == 6) {
-    document.getElementById('parabens').className = ''
-    document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col1f'
+    audio1.play()
   }
 }
