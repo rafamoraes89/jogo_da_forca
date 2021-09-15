@@ -80,7 +80,7 @@ function youWin() {
     a == 'A'
   ) {
     document.getElementById('parabens').className = ''
-    document.getElementById('parabens').className = 'col-8 col3g'
+    document.getElementById('parabens').className = 'col-lg-8 mr-3 ml-3 col3g'
     document.getElementById('avancar').onclick = function () {
       return true
     }
